@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f0df">
-  <meta name="description" content="Dog's Hotel Panda — cuidado, educação e bem-estar para o seu cão no ABC Paulista.">
-  <title>Dog's Hotel Panda | Cuidado com afeto e propósito</title>
+  <meta name="description" content="Dog's Panda — cuidado, diversão e bem-estar para o seu cão.">
+  <title>Dog's Panda | Cuidado para seu melhor amigo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,71 +13,78 @@
 </head>
 <body>
   <header class="site-header" id="topo">
-    <a class="brand" href="#inicio" data-page="home" aria-label="Dog's Hotel Panda — início">
-      <img src="assets/logo.png" alt="Logo Dog's Hotel Panda">
+    <a class="brand" href="#inicio" data-page="home" aria-label="Dog's Panda — início">
+      <img src="assets/logo.jpg" alt="Logo Dog's Panda">
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
     <nav class="main-nav" aria-label="Navegação principal">
-      <a href="#inicio" data-page="home" aria-current="page">Home</a><a href="#servicos" data-page="services">Serviços</a><a href="#duvidas" data-page="questions">Dúvidas</a><a href="#quem-somos" data-page="about">Quem Somos?</a>
-      <span class="nav-whatsapp" aria-label="WhatsApp — adicione o número da empresa para ativar">◉ <span>WhatsApp</span></span>
+      <a href="#inicio" data-page="home" aria-current="page">Home</a>
+      <a href="#servicos" data-page="services">Serviços</a>
+      <a href="#duvidas" data-page="questions">Dúvidas</a>
+      <span class="nav-whatsapp" aria-label="WhatsApp — adicione o número da empresa para ativar"><span class="whatsapp-icon" aria-hidden="true">◉</span><span>WhatsApp</span></span>
     </nav>
   </header>
 
   <main>
-    <section class="hero page-view" data-view="home" id="inicio">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="bamboo-mark">✳</span> Cuidado que entende. Educação que transforma.</p>
-        <h1>Um lugar para seu cão <em>viver bem</em>.</h1>
-        <p class="hero-lede">Acolhimento, conhecimento e cuidado individualizado para uma vida mais leve — para cães e tutores.</p>
-        <button class="button button-primary" type="button" aria-disabled="true" title="Adicione o número de WhatsApp da empresa para ativar">Agende já <span aria-hidden="true">↗</span></button>
-        <div class="hero-note"><span class="note-dot"></span> Educação e bem-estar no ABC Paulista</div>
+    <section class="hero home-hero page-view" data-view="home" id="inicio">
+      <div class="home-intro">
+        <p class="eyebrow"><span class="bamboo-mark">✳</span> DOG'S PANDA <span class="eyebrow-divider"></span> CUIDADO E BEM-ESTAR</p>
+        <h1>Um mundo de cuidado para o seu <em>melhor amigo.</em></h1>
+        <p class="hero-lede">Momentos de diversão, cuidado e aprendizado para cães e para quem ama estar ao lado deles.</p>
       </div>
-      <div class="hero-visual" aria-label="Espaço reservado para imagem">
-        <div class="image-placeholder hero-placeholder"><span>Imagens</span><small>Seu espaço para uma foto especial</small></div>
-        <div class="visual-stamp"><span>🐾</span><span>Bem-estar<br>em cada detalhe</span></div>
-        <div class="visual-caption">Cuidar também é saber escutar.</div>
+
+      <div class="service-carousel" aria-label="Conheça nossos serviços">
+        <button class="carousel-arrow carousel-prev" type="button" aria-label="Serviço anterior">←</button>
+        <div class="service-track" id="service-track">
+          <a class="service-card" href="#servico-daycare" data-page="services" data-service="servico-daycare">
+            <span class="service-card-photo"><span>Imagens</span></span>
+            <span class="service-card-copy"><span class="service-card-number">01 / DIA A DIA</span><strong>Daycare</strong><span class="service-card-link">Conheça o serviço <b>↗</b></span></span>
+          </a>
+          <a class="service-card" href="#servico-banho" data-page="services" data-service="servico-banho">
+            <span class="service-card-photo"><span>Imagens</span></span>
+            <span class="service-card-copy"><span class="service-card-number">02 / CUIDADO</span><strong>Banho e Tosa</strong><span class="service-card-link">Conheça o serviço <b>↗</b></span></span>
+          </a>
+          <a class="service-card" href="#servico-adestramento" data-page="services" data-service="servico-adestramento">
+            <span class="service-card-photo"><span>Imagens</span></span>
+            <span class="service-card-copy"><span class="service-card-number">03 / EM CASA</span><strong>Adestramento <small>Domiciliar</small></strong><span class="service-card-link">Conheça o serviço <b>↗</b></span></span>
+          </a>
+        </div>
+        <button class="carousel-arrow carousel-next" type="button" aria-label="Próximo serviço">→</button>
+        <div class="carousel-caption"><span class="carousel-dots" aria-label="Escolha um serviço"><button type="button" aria-label="Daycare"></button><button type="button" aria-label="Banho e Tosa"></button><button type="button" aria-label="Adestramento Domiciliar"></button></span><span class="drag-hint">Arraste para explorar <b>⟷</b></span></div>
       </div>
-      <a class="scroll-cue" href="#boas-vindas" aria-label="Role para conhecer">↓</a>
+
+      <div class="home-note"><span class="note-dot"></span> Um espaço para cuidar, brincar e aprender.</div>
     </section>
 
-    <section class="intro section-pad page-view" data-view="home" id="boas-vindas">
-      <div class="section-kicker">DOG'S HOTEL PANDA <span></span> ABC PAULISTA</div>
-      <div class="intro-grid">
-        <h2>Mais do que hospedar.<br><em>É cuidar de verdade.</em></h2>
-        <p>Acreditamos que uma boa convivência começa pela compreensão. Por isso, unimos educação canina, respeito à individualidade e um ambiente acolhedor para que cada cão possa florescer no seu próprio ritmo.</p>
-      </div>
-      <div class="feature-row"><div><b>01</b><span>Respeito ao tempo<br>de cada cão</span></div><div><b>02</b><span>Educação com<br>conhecimento</span></div><div><b>03</b><span>Confiança para<br>toda a família</span></div></div>
-    </section>
-
-    <section class="services section-pad page-view" data-view="services" id="servicos">
-      <div class="section-kicker">NOSSO ESPAÇO <span></span> UM CONVITE AO BEM-ESTAR</div>
-      <div class="section-heading"><h2>Um dia cheio de<br><em>boas descobertas.</em></h2><p>Ambientes preparados para acolher, estimular e cuidar. Cada cantinho pode contar uma história.</p></div>
-      <div class="gallery-grid">
-        <div class="image-placeholder gallery-large"><span>Imagens</span><small>Ambientes</small></div>
-        <div class="image-placeholder"><span>Imagens</span><small>Momentos</small></div>
-        <div class="image-placeholder"><span>Imagens</span><small>Estrutura</small></div>
-      </div>
-      <div class="service-label"><span>01 —</span> Cuidado pensado para cada personalidade <span class="label-line"></span> <a href="#quem-somos" data-page="about">Conheça nosso jeito <b>↗</b></a></div>
-    </section>
-
-    <section class="values section-pad page-view" data-view="about" id="quem-somos">
-      <div class="section-kicker">QUEM SOMOS? <span></span> NOSSA ESSÊNCIA</div>
-      <div class="section-heading values-heading"><h2>Um propósito que<br><em>começa pelo cuidado.</em></h2><p>Somos uma empresa feita para aproximar cães e tutores, com carinho, responsabilidade e uma escuta atenta a cada história.</p></div>
-      <div class="purpose-grid">
-        <article class="purpose-card"><div class="card-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41s-16-9-16-21a9 9 0 0 1 16-5 9 9 0 0 1 16 5c0 12-16 21-16 21Z"/><path d="M18 24h5l3-6 4 13 3-7h4"/></svg></div><span class="card-label">01 / VISÃO</span><h3>O futuro que<br>queremos construir</h3><p>Ser referência no ABC Paulista em educação e cuidado canino, com uma creche confortável, segura e confiável. Um lugar onde cães tenham qualidade de vida e tutores encontrem tranquilidade, confiança e acolhimento.</p><div class="card-paw">✳</div></article>
-        <article class="purpose-card featured-card"><div class="card-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 27c0-8 7-14 16-14s16 6 16 14v8H8z"/><path d="M15 25h.1M33 25h.1M20 31c2 2 6 2 8 0M24 13V7m-4 2 4-2 4 2"/><path d="M8 35c-2 2-4 2-6 1m38-1c2 2 4 2 6 1"/></svg></div><span class="card-label">02 / MISSÃO</span><h3>O cuidado que<br>move a gente</h3><p>Transformar a comunicação entre cães e tutores por meio da educação, do conhecimento do comportamento canino e do cuidado individualizado — promovendo uma convivência mais harmoniosa e melhor qualidade de vida para ambos.</p><div class="card-paw">✳</div></article>
-        <article class="purpose-card values-card"><div class="card-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 40 12v11c0 10-7 16-16 20C15 39 8 33 8 23V12z"/><path d="m17 24 5 5 10-11"/></svg></div><span class="card-label">03 / VALORES</span><h3>O que guia<br>cada escolha</h3><ul><li><b>Educação primeiro:</b> compreender antes de corrigir.</li><li><b>Transparência:</b> relações claras e honestas.</li><li><b>Comunicação:</b> conectar cães, tutores e equipe.</li><li><b>Bem-estar:</b> respeitar limites e individualidade.</li><li><b>Responsabilidade:</b> atenção, respeito e segurança.</li><li><b>Evolução:</b> estudar e aprimorar continuamente.</li></ul><div class="card-paw">✳</div></article>
+    <section class="services-page section-pad page-view" data-view="services" id="servicos">
+      <div class="section-kicker">DOG'S PANDA <span></span> NOSSOS SERVIÇOS</div>
+      <div class="section-heading"><h2>Cuidado em cada<br><em>fase do dia.</em></h2><p>Escolha o que combina com a rotina do seu cão. Estamos preparando cada detalhe para receber vocês.</p></div>
+      <div class="service-details">
+        <article class="service-detail" id="servico-daycare">
+          <div class="detail-image image-placeholder"><span>Imagens</span><small>Daycare</small></div>
+          <div class="detail-copy"><span class="card-label">01 / DIA A DIA</span><h3>Daycare</h3><p>Um lugar para brincar, se movimentar e aproveitar o dia com companhia e cuidado. Em breve, mais detalhes sobre a rotina e as atividades.</p><button class="button button-primary" type="button" aria-disabled="true" title="Adicione o número de WhatsApp da empresa para ativar">Fale pelo WhatsApp <span>↗</span></button></div>
+        </article>
+        <article class="service-detail detail-reverse" id="servico-banho">
+          <div class="detail-image image-placeholder"><span>Imagens</span><small>Banho e Tosa</small></div>
+          <div class="detail-copy"><span class="card-label">02 / CUIDADO</span><h3>Banho e Tosa</h3><p>Cuidado e atenção para deixar cada cão confortável e bem cuidado. Em breve, compartilharemos os detalhes dos nossos serviços.</p><button class="button button-primary" type="button" aria-disabled="true" title="Adicione o número de WhatsApp da empresa para ativar">Fale pelo WhatsApp <span>↗</span></button></div>
+        </article>
+        <article class="service-detail" id="servico-adestramento">
+          <div class="detail-image image-placeholder"><span>Imagens</span><small>Adestramento em casa</small></div>
+          <div class="detail-copy"><span class="card-label">03 / EM CASA</span><h3>Adestramento <em>Domiciliar</em></h3><p>Aprendizado com orientação na rotina de vocês, dentro de casa. Em breve, traremos mais informações sobre como funciona.</p><button class="button button-primary" type="button" aria-disabled="true" title="Adicione o número de WhatsApp da empresa para ativar">Fale pelo WhatsApp <span>↗</span></button></div>
+        </article>
       </div>
     </section>
 
-    <section class="empty-section section-pad page-view" data-view="questions" id="duvidas"><div class="section-kicker">DÚVIDAS <span></span> ESTAMOS AQUI</div><div class="empty-panel" aria-label="Área reservada para dúvidas"></div></section>
-    <section class="closing-cta page-view" data-view="home"><div class="cta-mark">✳</div><p>Um novo capítulo para vocês dois</p><h2>Seu melhor amigo merece<br><em>se sentir em casa.</em></h2><button class="button button-light" type="button" aria-disabled="true" title="Adicione o número de WhatsApp da empresa para ativar">Agende já <span>↗</span></button></section>
+    <section class="empty-section section-pad page-view" data-view="questions" id="duvidas">
+      <div class="section-kicker">DÚVIDAS <span></span> EM BREVE</div>
+      <div class="empty-panel" aria-label="Área reservada para dúvidas"></div>
+    </section>
   </main>
 
   <footer class="site-footer" id="contato">
     <div class="social-block"><p>Acesse nossas redes</p><div class="social-links"><a href="#contato" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r=".7" class="fill"/></svg></a><a href="#contato" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-3H14V8c0-.9.3-1.5 1.7-1.5H18V3.8c-.4-.1-1.5-.2-2.8-.2-2.8 0-4.7 1.7-4.7 4.8V10H8v3h2.5v8Z"/></svg></a><a href="#contato" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3h3c.2 2 1.3 3.5 4 4v3c-1.6 0-3-.5-4-1.4v6.7a6 6 0 1 1-6-6h.8v3.1H11a2.9 2.9 0 1 0 2.9 2.9Z"/></svg></a></div></div>
-    <div class="footer-main"><div class="footer-brand"><img src="assets/logo.png" alt="Logo Dog's Hotel Panda"><div><h3>Dog's Hotel Panda</h3><p>O melhor hotel do ABC<br>para seu dog.</p></div></div><div class="footer-col"><h4>Funcionamento</h4><p>Segunda a sexta<br><span>Horários a confirmar</span></p><p>Sábados, domingos e feriados<br><span>Consulte disponibilidade</span></p></div><div class="footer-col"><h4>Fale conosco</h4><p>WhatsApp<br><span>Adicione o número da empresa</span></p><p>E-mail<br><span>Adicione o e-mail</span></p></div><div class="footer-col"><h4>Onde estamos</h4><p>ABC Paulista<br><span>Endereço a confirmar</span></p></div></div>
-    <div class="footer-bottom"><span>© 2026 Dog's Hotel Panda</span><span>Feito com cuidado para quem ama cuidar.</span></div>
+    <div class="footer-main"><div class="footer-brand"><img src="assets/logo.jpg" alt="Logo Dog's Panda"><div><h3>Dog's Panda</h3><p>Cuidado, diversão e aprendizado<br>para o seu melhor amigo.</p></div></div><div class="footer-col"><h4>Funcionamento</h4><p>Horários<br><span>Em breve</span></p></div><div class="footer-col"><h4>Fale conosco</h4><p>WhatsApp<br><span>Adicione o número da empresa</span></p><p>E-mail<br><span>Adicione o e-mail</span></p></div><div class="footer-col"><h4>Onde estamos</h4><p>Endereço<br><span>Em breve</span></p></div></div>
+    <div class="footer-bottom"><span>© 2026 Dog's Panda</span><span>Cuidado com carinho, em cada encontro.</span></div>
   </footer>
   <script src="script.js"></script>
 </body>
